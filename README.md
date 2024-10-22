@@ -56,19 +56,4 @@ Stay tuned for updates as more tasks and projects are added to this repository.
 
 ---
 
-Feel free to modify and expand upon this template as needed. Once finalized, you can follow the steps below to add it to your GitHub repository:
-
-### Steps to Add the `README.md` File:
-1. Navigate to your repository's root directory.
-2. Create or edit the `README.md` file:
-   ```bash
-   leafpad README.md &
-   ```
-3. Copy and paste the above content into the file.
-4. Save and close the file.
-5. Push the changes to your GitHub repository:
-   ```bash
-   git add README.md
-   git commit -m "Added README describing the VSD Squadron Mini Internship"
-   git push origin main
-   ```
+Feel free to modify and explore the world of RISC-V
