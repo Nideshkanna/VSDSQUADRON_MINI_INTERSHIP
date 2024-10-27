@@ -3,11 +3,11 @@
 
 # Task 2 - RISC-V SPIKE Simulation, Debugging, and Stack Analysis
 
-## Overview
+## Overview:
 
 In **Task 2**, we compiled and simulated the `sum1ton` code with the RISC-V SPIKE simulator, using both regular and debugging modes to analyze register values and stack pointer behavior. This task focuses on examining the differences in register and stack pointer values before and after execution to understand how the RISC-V architecture manages memory and execution flow.
 
-## Objectives
+## Objectives:
 
 1. Compile the `sum1ton` code with the RISC-V toolchain.
 2. Simulate and observe the output in SPIKE.
@@ -15,7 +15,7 @@ In **Task 2**, we compiled and simulated the `sum1ton` code with the RISC-V SPIK
 
 ---
 
-## Steps
+## Steps:
 
 ### Step 1: Compile the `sum1ton` Code with RISC-V GCC
 
@@ -78,7 +78,7 @@ In **Task 2**, we compiled and simulated the `sum1ton` code with the RISC-V SPIK
 
 ---
 
-## Observations and Analysis
+## Observations and Analysis:
 
 1. **Register `a0`**:
    - The register `a0` is used to hold values related to function calls and return values. By stepping through in SPIKE's debug mode, we observed `a0` holding the accumulated sum at specific stages.
@@ -89,7 +89,7 @@ In **Task 2**, we compiled and simulated the `sum1ton` code with the RISC-V SPIK
 
 ---
 
-## Summary
+## Summary:
 
 This task provided insight into the low-level behavior of the RISC-V ISA through SPIKE debugging. By observing `a0` and `sp` register values, we could trace stack allocation and register usage, demonstrating effective memory and register management in RISC-V for a simple summation program.
 
