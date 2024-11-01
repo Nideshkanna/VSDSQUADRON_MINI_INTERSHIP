@@ -156,7 +156,49 @@ For each instruction, we detail the exact 32-bit binary pattern based on its ins
 
 ## Step 4: Upload 32-Bit Patterns on GitHub
 
-The identified binary patterns for each instruction type have been saved as `.md` files and uploaded to the GitHub repository under a `task3` directory:
+The identified binary patterns for each instruction type have been saved as `.md` files and uploaded to the GitHub repository under a `task3` directory
+
+For **Step 4**, here’s a complete guide for creating and uploading the identified 32-bit binary instruction patterns to GitHub. This step involves creating two additional files: one to document the 15 unique RISC-V instructions and another containing their 32-bit patterns.
+
+---
+
+## Step 4: Document and Upload 32-Bit Patterns on GitHub
+
+### Preparing Files for GitHub
+
+1. **Create Documentation Files:**
+   - In the `task3` folder, create two files: 
+     - `unique_instructions.md`: This file describes the 15 unique instructions with their type, purpose, and breakdown of opcode and fields.
+     - `32bit_instruction_patterns.md`: This file contains the exact 32-bit patterns derived for each instruction, presented in binary format.
+
+2. **Example Content for `unique_instructions.md`:**
+   - **Instruction:** `add x1, x2, x3`
+     - **Type:** R-Type
+     - **Purpose:** Performs addition of two registers
+     - **Format:** `opcode (7 bits) | rd (5 bits) | funct3 (3 bits) | rs1 (5 bits) | rs2 (5 bits) | funct7 (7 bits)`
+     - **Pattern:** `0000000 00011 00010 000 00001 0110011`
+   
+   - Include similar entries for the remaining 14 instructions.
+
+3. **Example Content for `32bit_instruction_patterns.md`:**
+   - For each instruction, write out the binary pattern in 32-bit format.
+   - Example for `add x1, x2, x3`:  
+     ```plaintext
+     0000000 00011 00010 000 00001 0110011
+     ```
+
+4. **Push Files to GitHub:**
+   - In your local repository, add and commit the files:
+     ```bash
+     git add task3/unique_instructions.md task3/32bit_instruction_patterns.md
+     git commit -m "Add RISC-V instruction analysis and 32-bit patterns for Task 3"
+     ```
+
+   - Push the changes to your GitHub repository:
+     ```bash
+     git push origin main
+     ```
+
 
 
 ---
