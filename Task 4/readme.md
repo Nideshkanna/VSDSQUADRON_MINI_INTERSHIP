@@ -44,17 +44,7 @@ View Simulation in GTKWave
 Observing and Capturing Waveforms
 
 Analyze the waveforms for each instruction and capture screenshots for the following RISC-V instructions:
-Instruction	Operation
-ADD	ADD R6, R2, R1
-SUB	SUB R7, R1, R2
-AND	AND R8, R1, R3
-OR	OR R9, R2, R5
-XOR	XOR R10, R1, R4
-SLT	SLT R1, R2, R4
-ADDI	ADDI R12, R4, 5
-BEQ	BEQ R0, R0, 15
-BNE	BNE R0, R1, 20
-SLL	SLL R15, R1, R2
+![image](https://github.com/user-attachments/assets/e292137d-acfe-4752-bd6f-c776fb9a2acd)
 
 For each instruction:
 
