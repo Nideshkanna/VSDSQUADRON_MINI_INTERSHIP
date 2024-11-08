@@ -46,17 +46,3 @@ Observing and Capturing Waveforms
 Analyze the waveforms for each instruction and capture screenshots for the following RISC-V instructions:
 ![image](https://github.com/user-attachments/assets/e292137d-acfe-4752-bd6f-c776fb9a2acd)
 
-For each instruction:
-
-    Capture the state of registers and relevant signals before and after execution.
-    Observe changes in values for signals, especially SP (stack pointer) and a0.
-
-Uploading Waveform Snapshots
-
-    Save each waveform screenshot with a descriptive filename (e.g., ADD_waveform.png, SUB_waveform.png, etc.).
-    Create a waveforms folder in this directory and move all screenshots into it.
-    Commit and push the screenshots to your GitHub repository:
-
-git add waveforms/*.png
-git commit -m "Added waveform snapshots for RISC-V functional simulation"
-git push origin main
