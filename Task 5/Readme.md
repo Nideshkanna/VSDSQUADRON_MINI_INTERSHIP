@@ -1,53 +1,62 @@
-3-to-8 Decoder Using VSDSquadron Mini
-Overview
+Here's a `README.md` file for your 3-to-8 Decoder project:
 
+---
+
+# 3-to-8 Decoder Using VSDSquadron Mini
+
+## Overview
 This project involves creating a 3-to-8 decoder using the VSDSquadron Mini development board, push buttons for input, and LEDs for output. A decoder circuit activates one of eight outputs based on three binary inputs. The circuit is implemented to demonstrate practical applications of digital logic and microcontroller programming.
-Components Required
 
-    VSDSquadron Mini: 1
-    Push Buttons (for binary inputs): 3
-    LEDs (for outputs): 8
-    Breadboard: 1
-    Jumper Wires: 20-30
-    PlatformIO IDE (for software development)
+## Components Required
+- **VSDSquadron Mini**: 1
+- **Push Buttons** (for binary inputs): 3
+- **LEDs** (for outputs): 8
+- **Breadboard**: 1
+- **Jumper Wires**: 20-30
+- **PlatformIO IDE** (for software development)
 
-Circuit Connection
+## Circuit Connection
+1. **Inputs**: Connect three push buttons to GPIO input pins on the VSDSquadron Mini.
+2. **Outputs**: Connect eight LEDs to GPIO output pins on the VSDSquadron Mini.
+3. **Power and Ground**: Ensure a common ground and proper power supply for all components.
+4. **Wiring**: Use jumper wires to establish the connections according to the pinout.
 
-    Inputs: Connect three push buttons to GPIO input pins on the VSDSquadron Mini.
-    Outputs: Connect eight LEDs to GPIO output pins on the VSDSquadron Mini.
-    Power and Ground: Ensure a common ground and proper power supply for all components.
-    Wiring: Use jumper wires to establish the connections according to the pinout.
+### Pinout Table
+| **Input Name** | **Pin Number on VSDSquadron Mini** |
+| -------------- | ----------------------------------- |
+| A              | PD1                                 |
+| B              | PD2                                 |
+| C              | PD3                                 |
 
-Pinout Table
-Input Name	Pin Number on VSDSquadron Mini
-A	PD1
-B	PD2
-C	PD3
-Output Name	Pin Number on VSDSquadron Mini
-Y0	PC1
-Y1	PC2
-Y2	PC3
-Y3	PC4
-Y4	PC5
-Y5	PC6
-Y6	PC7
-Y7	PC8
-Truth Table for 3-to-8 Decoder
-A	B	C	Output (Active)
-0	0	0	Y0
-0	0	1	Y1
-0	1	0	Y2
-0	1	1	Y3
-1	0	0	Y4
-1	0	1	Y5
-1	1	0	Y6
-1	1	1	Y7
-How to Program
+| **Output Name** | **Pin Number on VSDSquadron Mini** |
+| --------------- | ----------------------------------- |
+| Y0              | PC1                                 |
+| Y1              | PC2                                 |
+| Y2              | PC3                                 |
+| Y3              | PC4                                 |
+| Y4              | PC5                                 |
+| Y5              | PC6                                 |
+| Y6              | PC7                                 |
+| Y7              | PC8                                 |
 
-    Install PlatformIO in VS Code.
-    Connect the VSDSquadron Mini board to your computer.
-    Write and upload the following code using PlatformIO:
+## Truth Table for 3-to-8 Decoder
+| **A** | **B** | **C** | **Output** (Active) |
+|-------|-------|-------|---------------------|
+| 0     | 0     | 0     | Y0                  |
+| 0     | 0     | 1     | Y1                  |
+| 0     | 1     | 0     | Y2                  |
+| 0     | 1     | 1     | Y3                  |
+| 1     | 0     | 0     | Y4                  |
+| 1     | 0     | 1     | Y5                  |
+| 1     | 1     | 0     | Y6                  |
+| 1     | 1     | 1     | Y7                  |
 
+## How to Program
+1. Install PlatformIO in VS Code.
+2. Connect the VSDSquadron Mini board to your computer.
+3. Write and upload the following code using PlatformIO:
+
+```c
 #include <stdio.h>
 #include <ch32v00x.h>
 
@@ -89,22 +98,19 @@ int main() {
         }
     }
 }
+```
 
-Circuit Diagram
-
+## Circuit Diagram
 Ensure to create a neat digital or hand-drawn circuit diagram showing the connections between the VSDSquadron Mini board, push buttons, and LEDs.
-How It Works
 
-    The three inputs A,B,CA,B,C are read as binary values.
-    The binary combination determines which output LED will be turned on.
-    The logic activates only one of the eight outputs at a time based on the input.
+## How It Works
+- The three inputs \( A, B, C \) are read as binary values.
+- The binary combination determines which output LED will be turned on.
+- The logic activates only one of the eight outputs at a time based on the input.
 
-Applications
+## Applications
+- Memory address decoding
+- Control signal generation in microprocessor systems
+- Binary-to-decimal decoders
 
-    Memory address decoding
-    Control signal generation in microprocessor systems
-    Binary-to-decimal decoders
-
-
-
-
+---
